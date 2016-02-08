@@ -3,12 +3,12 @@
 {{outlet}}
 
 Standalone datepicker:
-{{pikaday-input format='dddd MMMM Do YYYY, h:mm:ss a' theme='dark-theme'}}
+{{pikaday-input format='dddd MMMM Do YYYY' theme='dark-theme'}}
 
 <br>
 
 Datepicker with bound and set value:
-{{pikaday-input value=startDate format='DD.MM.YYYY'}}
+{{pikaday-input value=startDate format='DD.MM.YYYY, h:mm:ss a' showTime=true showMinute=false incrementHourBy=0.5}}
 {{startDate}}
 <br>
 <button {{action "clearStartDate"}}>Clear Date</button>

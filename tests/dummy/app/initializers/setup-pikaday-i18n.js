@@ -9,7 +9,9 @@ export default {
       nextMonth: 'Nächster Monat',
       months: moment.localeData()._months,
       weekdays: moment.localeData()._weekdays,
-      weekdaysShort: moment.localeData()._weekdaysShort
+      weekdaysShort: moment.localeData()._weekdaysShort,
+      midnight: 'Mitternacht',
+      noon: 'Mittag'
     });
 
     container.register('pikaday-i18n:main', i18n, { singleton: true });
